@@ -1,0 +1,108 @@
+
+.box{
+  position: fixed;
+  top: 0;
+  transform: rotate(55deg);
+  left: 0;
+}
+
+
+.wave{
+  position: absolute;
+  opacity: .4;
+  width: 2600px;
+  height: 2200px;
+  margin-left: -100px;
+  margin-top: -250px;
+  border-radius: 43%;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+.wave.-one {
+  animation: rotate 9000ms infinite linear;
+  opacity: .1;
+  background: #0af;
+}
+
+.wave.-two {
+  animation: rotate 3000ms infinite linear;
+  opacity: .1;
+  background: black;
+}
+
+.wave.-three {
+  animation: rotate 6000ms infinite linear;
+  background-color: #77daff;
+}
+
+.wave.-four {
+  animation: rotate 3500ms infinite linear;
+  opacity: .1;
+  background: indigo;
+  width: 2000px;
+  height: 1800px;
+}
+
+body{
+font-family: 'Coda', cursive;
+}
+
+header {
+  font-size: 35px;
+  line-height: 25px;
+}
+
+
+.maincontainer {
+  margin: auto;
+  margin-top: 50px;
+  width: 1200px;
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.date{
+  text-align: right;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: orange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.address {
+  grid-column-start: 17;
+  grid-column-end: 19;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  font-size: 18px;
+  text-align: right;
+  line-height: 14px;
+}
